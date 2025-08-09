@@ -1,0 +1,21 @@
+[project]
+name = "sample-project"
+version = "0.0.1"
+description = "Template configuration; replace name/description in each repo."
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E","F","I","W","B","UP"]
+ignore = []
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
+
